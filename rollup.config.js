@@ -15,8 +15,8 @@ import replace from "rollup-plugin-replace";
 let minify = false;
 let productionEnv = false;
 
-run("./src/renderer", "./renderer", minify);
-run("./src/main", "./main", minify);
+run("./renderer/*", "./renderer", minify);
+run("./main/*", "./main", minify);
 
 export default [
   // main process (nodejs) config
